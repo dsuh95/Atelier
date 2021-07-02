@@ -1,0 +1,12 @@
+node_modules
+client/dist/bundle.js
+client/dist/bundle.js.map
+
+client/src/config/config.js
+.eslintrc.js
+
+.vscode/settings.json
+
+coverage
+
+.env
