@@ -1,16 +1,15 @@
 # Catwalk
 
 Intro:
-- Welcome to Project Catwalk!
-- Project Catwalk is a client-facing web portal
-- This React-based e-commerce site consists of overview, related items, questions and answers, and reviews components that users can interact with
+- Welcome to Atelier!
+- Atelier is the backend for an e-commerce application
+- This project specifically deals with the Q&A section for the application
 
 Getting Started:
 - Environment variables (.env file in main directory)
-  - API_KEY (from Github)
-- Config (client/src/config/config.js)
-  - REACT_APP_CLOUDINARY_URL
-  - REACT_APP_CLOUDINARY_PRESET
+  - DBHOST (Host of database)
+  - DBUSER (Database user)
+  - DBPASS (Database password)
 - npm install
 - npm run build
 - npm start
@@ -20,7 +19,6 @@ Getting Started:
   - npm run test:coverage
 
 Main Technologies Used:
-- React
-- Context
+- PostgreSQL
 - Express
 - AWS
