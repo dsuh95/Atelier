@@ -1,18 +1,12 @@
 const {Client, Pool} = require('pg');
 const {Sequelize, DataTypes} = require('sequelize');
+require('dotenv').config();
 
-// const connection = new Pool({
-//   user: 'daniel',
-//   password: 'postgres',
-//   host: 'localhost',
-//   database: 'qa',
-//   port: 5432
-// });
 
 const connection = new Pool({
-  user: 'postgres',
-  password: 'postgres',
-  host: '20.84.96.176',
+  user: process.env.DBUSER,
+  password: process.env.DBPASS,
+  host: process.env.DBHOST,
   database: 'qa',
   port: 5432
 });

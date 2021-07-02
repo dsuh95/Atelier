@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
-// const database = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost:5432/qa', {logging:false}, {dialect: 'postgres'});
+require('dotenv').config();
 
-const database = new Sequelize('qa', 'postgres', 'postgres', {
-  host: '20.84.96.176',
+const database = new Sequelize('qa', process.env.DBUSER, process.env.DBPASS, {
+  host: process.env.DBHOST,
   dialect: 'postgres'
 })
 
